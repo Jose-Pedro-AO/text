@@ -127,6 +127,10 @@ textarea:focus-visible {
     text-align: center;
   }
 
+  h2 {
+    font-size: 2.2rem;
+  }
+
   textarea {
     height: 14rem;
   }
@@ -137,7 +141,7 @@ textarea:focus-visible {
     padding: 2rem;
   }
   .ads {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -150,6 +154,10 @@ textarea:focus-visible {
     text-shadow: 0.09rem 0.1rem 0rem #898999;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
   }
 
   p {
@@ -166,6 +174,10 @@ textarea:focus-visible {
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     text-shadow: 0.09rem 0.1rem 0rem #898999;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 }
 
