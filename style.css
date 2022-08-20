@@ -133,7 +133,8 @@ textarea:focus-visible {
 }
 
 @media (max-width: 560px) {
-  .container {
+  .container,
+  .ads {
     padding: 2rem;
   }
 }
@@ -168,7 +169,7 @@ textarea:focus-visible {
 
 .guia {
   text-align: left;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .guia h2 {
   margin-bottom: 0.5rem;
@@ -192,4 +193,5 @@ textarea:focus-visible {
   align-items: center;
   justify-content: center;
   align-self: center;
+  margin-bottom: 4rem;
 }

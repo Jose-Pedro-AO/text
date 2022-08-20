@@ -21,7 +21,7 @@ function handleTextLower() {
 
 function handleTextCamelCase() {
   var text = document.getElementById('text');
-  var s = text.value;
+  var s = String(text.value).toLowerCase();
   var n = s.length;
   var str = s[0].toUpperCase();
   for (var i = 1; i < n; i++) {
@@ -39,7 +39,7 @@ function handleTextCamelCase() {
 
 function handleTextNorm() {
   var text = document.getElementById('text');
-  var s = text.value;
+  var s = String(text.value).toLowerCase();
   var n = s.length;
   var str = s[0].toUpperCase();
   for (var i = 1; i < n; i++) {
