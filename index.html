@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-
+    <script src="./script.js"></script>
     <title>Text-Transform</title>
   </head>
   <body>
@@ -20,15 +20,15 @@
       </div>
       <div>
         <div class="buttons">
-          <a class="active"> Maiúsculo </a>
-          <a> Minúsculo </a>
-          <a> Estilo Frase </a>
-          <a> Primeira letra </a>
-          <a> Inverter texto </a>
+          <a class="active" onclick="handleTextUp()"> Maiúsculo </a>
+          <a onclick="handleTextLower()"> Minúsculo </a>
+          <a onclick="handleTextNorm()"> Estilo Frase </a>
+          <a onclick="handleTextCamelCase()"> Primeira letra </a>
+          <a onclick="handleTextNeg()"> Inverter texto </a>
         </div>
         <textarea
           name=""
-          id=""
+          id="text"
           cols="30"
           rows="10"
           placeholder="Insira o seu texto aqui!"
@@ -36,6 +36,23 @@
           value=""
           spellcheck="false"
         ></textarea>
+        <div class="guia">
+          <h2>Guia de utilização</h2>
+          <p>Para usar a ferramenta de conversão de letras faça o seguinte:</p>
+          <ul>
+            <li>
+              Cole ou escreva o seu texto na caixa de texto no início da página.
+            </li>
+            <li>
+              Clique no botão correspondente para converter todas as letras do
+              seu texto.
+            </li>
+            <li>
+              Depois de converter basta copiar o texto e colar onde quiser.
+            </li>
+          </ul>
+        </div>
+        <div class="ads">Anuncios</div>
       </div>
     </div>
   </body>
