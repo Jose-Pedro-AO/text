@@ -33,16 +33,21 @@
           <input type="text" id="palavraNova" placeholder="Nova Palavra" />
           <button onclick="substituirPalavra()">Trocar</button>
         </div>
-        <textarea
-          name=""
-          id="text"
-          cols="30"
-          rows="10"
-          placeholder="Insira o seu texto aqui!"
-          onChange=""
-          value=""
-          spellcheck="false"
-        ></textarea>
+        <div class="textarea-container">
+          <textarea
+            name=""
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Insira o seu texto aqui!"
+            onChange=""
+            value=""
+            spellcheck="false"
+          ></textarea>
+          <button id="btn-copiar" onclick="copyToClipboard()">
+            <i class="fas fa-copy"></i> Copiar
+          </button>
+        </div>
         <div class="guia">
           <h2>Guia de utilização</h2>
           <p>Para usar a ferramenta de conversão de letras faça o seguinte:</p>

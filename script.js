@@ -90,3 +90,22 @@ function substituirPalavra() {
   var newText = s.replace(new RegExp(palavraAntiga, 'gi'), palavraNova);
   text.value = newText;
 }
+
+function copyToClipboard() {
+  const buttonCopy = document.getElementById('btn-copiar');
+  const textoElement = document.getElementById('text');
+  const texto = textoElement.value;
+
+  navigator.clipboard
+    .writeText(texto)
+    .then(() => {
+      buttonCopy.textContent = 'Copiado!';
+    })
+    .catch(error => {
+      console.error('Erro ao copiar o texto:', error);
+    });
+
+  setTimeout(function () {
+    buttonCopy.innerText = 'Copiar';
+  }, 2000);
+}
