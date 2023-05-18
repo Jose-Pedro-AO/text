@@ -25,6 +25,13 @@
           <a onclick="handleTextNorm()"> Estilo Frase </a>
           <a onclick="handleTextCamelCase()"> Primeira letra </a>
           <a onclick="handleTextNeg()"> Inverter texto </a>
+          <a id="buttonToggle" onclick="toggleInputs()"> Substituir palavra </a>
+        </div>
+        <div class="replace" id="inputsDiv" style="display: none">
+          <h3>Substituir Palavra</h3>
+          <input type="text" id="palavraAntiga" placeholder="Palavra Antiga" />
+          <input type="text" id="palavraNova" placeholder="Nova Palavra" />
+          <button onclick="substituirPalavra()">Trocar</button>
         </div>
         <textarea
           name=""

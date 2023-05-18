@@ -43,8 +43,8 @@ function handleTextNorm() {
   var n = s.length;
   var str = s[0].toUpperCase();
   for (var i = 1; i < n; i++) {
-    if (s[i] == '.' && i < n - 1) {
-      str += '.';
+    if ('.!?;'.includes(s[i]) && i < n - 1) {
+      str += s[i];
       if (s[i + 1] == ' ') i += 1;
       str += ' ' + s[i + 1].toUpperCase();
       i++;
@@ -66,4 +66,27 @@ function handleTextNeg() {
 
   text.value = str;
   classActive(4);
+}
+
+function toggleInputs() {
+  var inputsDiv = document.getElementById('inputsDiv');
+  var buttonToggle = document.getElementById('buttonToggle');
+
+  var inputsVisible = inputsDiv.style.display === 'block';
+
+  inputsDiv.style.display = inputsVisible ? 'none' : 'block';
+
+  buttonToggle.textContent = inputsVisible
+    ? 'Substituir palavra'
+    : 'Ocultar Inputs';
+}
+
+function substituirPalavra() {
+  var palavraAntiga = document.getElementById('palavraAntiga').value;
+  var palavraNova = document.getElementById('palavraNova').value;
+  var text = document.getElementById('text');
+  var s = text.value;
+
+  var newText = s.replace(new RegExp(palavraAntiga, 'gi'), palavraNova);
+  text.value = newText;
 }
